@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ProjectTreeState projectID="wTGk3mGGAqAAaAWn" projectPath="D:\\u0422\u0420\u041f\u041e\\u041b\u0430\u0431\u043e\u0440\u0430\u0442\u043e\u0440\u043d\u0430\u044f \u0440\u0430\u0431\u043e\u0442\u0430 1\lab1\vpproject\lab1.vpp">
+	<TreeState name="ModelRepository" viewX="0" viewY="0">
+		<ExpandedPath>ModelRepository</ExpandedPath>
+		<SelectedPath>ModelRepository</SelectedPath>
+	</TreeState>
+	<TreeState name="DiagramNavigator" viewX="0" viewY="0">
+		<ExpandedPath>DiagramNavigator</ExpandedPath>
+		<ExpandedPath>DiagramNavigator,UML Diagrams</ExpandedPath>
+		<ExpandedPath>ClassDiagram</ExpandedPath>
+		<ExpandedPath>DiagramNavigator,Requirements Capturing</ExpandedPath>
+		<ExpandedPath>DiagramNavigator,Database Modeling</ExpandedPath>
+		<ExpandedPath>DiagramNavigator,Business Modeling</ExpandedPath>
+		<ExpandedPath>DiagramNavigator,SysML</ExpandedPath>
+		<ExpandedPath>DiagramNavigator,Enterprise Architecture</ExpandedPath>
+		<ExpandedPath>DiagramNavigator,Project Management</ExpandedPath>
+		<ExpandedPath>DiagramNavigator,SoaML</ExpandedPath>
+		<ExpandedPath>DiagramNavigator,CMMN</ExpandedPath>
+		<ExpandedPath>DiagramNavigator,Impact Analysis</ExpandedPath>
+		<ExpandedPath>DiagramNavigator,Strategic Analysis</ExpandedPath>
+		<ExpandedPath>DiagramNavigator,Process Map</ExpandedPath>
+		<ExpandedPath>DiagramNavigator,Analysis Canvas</ExpandedPath>
+		<ExpandedPath>DiagramNavigator,Software Design</ExpandedPath>
+		<ExpandedPath>DiagramNavigator,Decision Analysis</ExpandedPath>
+		<ExpandedPath>DiagramNavigator,Quality Control</ExpandedPath>
+		<ExpandedPath>DiagramNavigator,Flowchart</ExpandedPath>
+		<ExpandedPath>DiagramNavigator,Engineering</ExpandedPath>
+		<ExpandedPath>DiagramNavigator,Cloud Architecture</ExpandedPath>
+		<ExpandedPath>DiagramNavigator,Data Visualization</ExpandedPath>
+		<ExpandedPath>DiagramNavigator,Network Design</ExpandedPath>
+		<ExpandedPath>DiagramNavigator,General</ExpandedPath>
+		<ExpandedPath>DiagramNavigator,Others</ExpandedPath>
+		<SelectedPath>ClassDiagram,EmRk3mGGAqAAaAp5</SelectedPath>
+	</TreeState>
+	<TreeState name="ClassBrowser" viewX="0" viewY="0">
+		<ExpandedPath>ClassBrowser</ExpandedPath>
+		<ExpandedPath>ClassBrowser,ClassBrowser</ExpandedPath>
+	</TreeState>
+	<TreeState name="LogicalView" viewX="0" viewY="0"/>
+	<TreeState name="DiagramBacklog" viewX="0" viewY="0"/>
+</ProjectTreeState>
