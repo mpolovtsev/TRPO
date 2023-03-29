@@ -1,115 +1,87 @@
 package lab1;
-
-import java.util.ArrayList;
-
+/** Абстрактный класс Detail */
 public abstract class Detail
 {
-	protected String shape;
-	protected String material;
+	protected Shape shape;
+	protected Material material;
 	protected double weight;
 	protected double length;
 	protected double width;
 	protected double height;
 	
-	public Detail(String shape, String material, double weight, double length, double width, double height)
+	public Detail(Shape shape, Material material, double weight, 
+			double length, double width, double height)
 	{
 		this.shape = shape;
 		this.material = material;
-		this.weight = weight < 0 ? 0 : weight;
-		this.length = length < 0 ? 0 : length;
-		this.width = width < 0 ? 0 : width;
-		this.height = height < 0 ? 0 : height;
+		this.weight = weight;
+		this.length = length;
+		this.width = width;
+		this.height = height;
 	}
 	
-	public String GetShape()
+	public Shape getShape()
 	{
 		return shape;
 	}
 	
-	public String GetMaterial()
+	public Material getMaterial()
 	{
 		return material;
 	}
 	
-	public double GetWeight()
+	public double getWeight()
 	{
 		return weight;
 	}
 	
-	public double GetLength()
+	public double getLength()
 	{
 		return length;
 	}
 	
-	public double GetWidth()
+	public double getWidth()
 	{
 		return width;
 	}
 	
-	public double GetHeight()
+	public double getHeight()
 	{
 		return height;
 	}
 
-	public static double[] GetTotalWeight(ArrayList<Detail> details)
-	{
-		double weightOfCarDetails = 0;
-		double weightOfMachineDetails = 0;
-		double weightOfPhoneDetails = 0;
-		
-		for (Detail detail : details)
-		{	
-			if (detail instanceof CarDetail)
-				weightOfCarDetails += detail.GetWeight();
-			else if (detail instanceof MachineDetail)
-				weightOfMachineDetails += detail.GetWeight();
-			else
-				weightOfPhoneDetails += detail.GetWeight();
-		}
-		
-		return new double[] { weightOfCarDetails, weightOfMachineDetails, weightOfPhoneDetails };
-	}
-	
-	public String GetFullInfo()
+	// Информация о детали
+	@Override
+	public String toString()
 	{
 		String detailType;
 		
 		if (this instanceof CarDetail)
-			 detailType = "машинная";
+			 detailType = "car detail";
 		else if (this instanceof MachineDetail)
-			detailType = "станочная";
+			detailType = "machine detail";
 		else
-			detailType = "телефонная";
+			detailType = "phone detail";
 		
-		String detailInfo = String.format("\nДеталь: %s\nФорма: %s\nМатериал: %s\nВес: %s\nДлина: %s\nШирина: %s\n"
-				+ "Высота: %s\n", detailType, this.GetShape(), this.GetMaterial(), this.GetWeight(), this.GetLength(), 
-				this.GetWidth(), this.GetHeight());
+		String detailInfo = String.format("\nDetail: %s\nShape: %s\nMaterial: %s\nWeight: %s\nLength: %s\nWidth: %s\n"
+				+ "Height: %s\n", detailType, this.getShape(), this.getMaterial(), this.getWeight(), this.getLength(), 
+				this.getWidth(), this.getHeight());
 		
 		return detailInfo;
 	}
 	
-	public static String GetUnique(ArrayList<Detail> details)
+	enum Shape
 	{
-		boolean isUnique = true;
-		String result = "Уникальных деталей не найдено."; 
-			
-		for (int i = 0; i < details.size(); i++)
-		{
-			for (int j = 0; j < details.size(); j++)
-			{
-				if (details.get(i).GetShape() == details.get(j).GetShape() && i != j)
-				{
-					isUnique = false;
-				}
-			}
-				
-			if (isUnique)
-			{
-				result = details.get(i).GetFullInfo();
-				break;
-			}
-		}
-		
-		return result;
+		circle,
+		square,
+		rectangle,
+		triangle
+	}
+	
+	enum Material
+	{
+		metallic,
+		plastic,
+		rubber
 	}
 }

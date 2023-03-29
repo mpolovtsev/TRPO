@@ -1,0 +1,24 @@
+package lab1;
+
+import java.util.ArrayList;
+
+public class DetailWeightService {
+	public static double[] GetTotalWeight(ArrayList<Detail> details)
+	{
+		double weightOfCarDetails = 0;
+		double weightOfMachineDetails = 0;
+		double weightOfPhoneDetails = 0;
+		
+		for (Detail detail : details)
+		{	
+			if (detail instanceof CarDetail)
+				weightOfCarDetails += detail.GetWeight();
+			else if (detail instanceof MachineDetail)
+				weightOfMachineDetails += detail.GetWeight();
+			else
+				weightOfPhoneDetails += detail.GetWeight();
+		}
+		
+		return new double[] { weightOfCarDetails, weightOfMachineDetails, weightOfPhoneDetails };
+	}
+}

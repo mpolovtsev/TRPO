@@ -1,0 +1,35 @@
+package lab1;
+
+public class PhoneDetail extends Detail 
+{
+	Model model;
+	
+	public PhoneDetail(Shape shape, Material material, double weight, 
+			double length, double width, double height, Model model) 
+	{
+		super(shape, material, weight, length, width, height);
+		this.model = model;
+	}
+	
+	public Model GetModel()
+	{
+		return model;
+	}
+	
+	public String GetFullInfo()
+	{
+		String detailInfo =  super.GetFullInfo();
+		detailInfo += String.format("Модель телефона: %s\n", this.GetModel());
+		
+		return detailInfo;
+	}
+}
+
+enum Model
+{
+	Apple,
+	Samsung,
+	Poco,
+	Xiaomi,
+	Lenovo
+}

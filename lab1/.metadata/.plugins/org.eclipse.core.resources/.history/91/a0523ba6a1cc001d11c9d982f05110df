@@ -1,0 +1,9 @@
+package lab1;
+
+import java.util.ArrayList;
+
+public class DetailsRepository {
+	ArrayList<Detail> details = new ArrayList<Detail>();
+	
+	
+}

@@ -1,0 +1,36 @@
+package lab1;
+
+public class PhoneDetail extends Detail 
+{
+	Model model;
+	
+	public PhoneDetail(Shape shape, Material material, double weight, 
+			double length, double width, double height, Model model) 
+	{
+		super(shape, material, weight, length, width, height);
+		this.model = model;
+	}
+	
+	public Model getModel()
+	{
+		return model;
+	}
+	
+	@Override
+	public String toString()
+	{
+		String detailInfo =  super.toString();
+		detailInfo += String.format("Model: %s\n", this.getModel());
+		
+		return detailInfo;
+	}
+	
+	enum Model
+	{
+		Apple,
+		Samsung,
+		Poco,
+		Xiaomi,
+		Lenovo
+	}
+}

@@ -1,25 +1,38 @@
 package lab1;
 
-public class CarDetail extends Detail 
+/** Класс CarDetail, наследуемый от Detail */
+public class CarDetail extends Detail
 {
-	String carType;
+	Body body;
 	
-	public CarDetail(String shape, String material, double weight, double length, double width, double height, String carType) 
+	public CarDetail(Shape shape, Material material, double weight, 
+			double length, double width, double height, Body body) 
 	{
 		super(shape, material, weight, length, width, height);
-		this.carType = carType;
+		this.body = body;
 	}
 	
-	public String GetCarType()
+	public Body getBody()
 	{
-		return carType;
+		return body;
 	}
 	
-	public String GetFullInfo()
+	/** Информация о детали */
+	@Override
+	public String toString()
 	{
-		String detailInfo =  super.GetFullInfo();
-		detailInfo += String.format("Вид машины: %s\n", this.GetCarType());
+		String detailInfo =  super.toString();
+		detailInfo += String.format("Body: %s", this.getBody());
 		
 		return detailInfo;
+	}
+	
+	enum Body
+	{
+		coupe,
+		sedan,
+		crossover,
+		cabriolet,
+		pickup,
 	}
 }

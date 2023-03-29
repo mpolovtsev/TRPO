@@ -1,2 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<qualifiedTypeNameHistroy/>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="lab1.Detail.Material"/>
+    <fullyQualifiedTypeName name="lab1.CarDetail.Body"/>
+    <fullyQualifiedTypeName name="lab1.Detail.Shape"/>
+    <fullyQualifiedTypeName name="lab1.PhoneDetail.Model"/>
+</qualifiedTypeNameHistroy>

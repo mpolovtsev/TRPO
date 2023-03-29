@@ -1,25 +1,38 @@
 package lab1;
 
+/** Класс PhoneDetail, наследуемый от Detail */
 public class PhoneDetail extends Detail 
 {
-	String model;
+	Model model;
 	
-	public PhoneDetail(String shape, String material, double weight, double length, double width, double height, String model) 
+	public PhoneDetail(Shape shape, Material material, double weight, 
+			double length, double width, double height, Model model) 
 	{
 		super(shape, material, weight, length, width, height);
 		this.model = model;
 	}
 	
-	public String GetModel()
+	public Model getModel()
 	{
 		return model;
 	}
 	
-	public String GetFullInfo()
+	/** Информация о детали */
+	@Override
+	public String toString()
 	{
-		String detailInfo =  super.GetFullInfo();
-		detailInfo += String.format("Модель телефона: %s\n", this.GetModel());
+		String detailInfo =  super.toString();
+		detailInfo += String.format("Model: %s", this.getModel());
 		
 		return detailInfo;
+	}
+	
+	enum Model
+	{
+		apple,
+		samsung,
+		poco,
+		xiaomi,
+		lenovo
 	}
 }

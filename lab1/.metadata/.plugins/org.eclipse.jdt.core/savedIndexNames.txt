@@ -1,4 +1,4 @@
-INDEX VERSION 1.131+D:\ТРПО\Лабораторная работа 1\.metadata\.plugins\org.eclipse.jdt.core
-3959137331.index
-87111012.index
+INDEX VERSION 1.131+D:\ТРПО\repository\lab1\.metadata\.plugins\org.eclipse.jdt.core
 1865797976.index
+87111012.index
+3959137331.index

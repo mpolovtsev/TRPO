@@ -1,0 +1,61 @@
+package lab1;
+
+public class CarDetail extends Detail 
+{
+	CarType carType;
+	
+	public CarDetail(ShapeType shape, MaterialType material, double weight, 
+			double length, double width, double height, CarType carType) 
+	{
+		super(shape, material, weight, length, width, height);
+		this.carType = carType;
+	}
+	
+	public String GetCarType()
+	{
+		return carType;
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	@Override
+	public String toString()
+	{
+		String detailInfo =  super.GetFullInfo();
+		detailInfo += String.format("Вид машины: %s\n", this.GetCarType());
+		
+		return detailInfo;
+	}
+	
+	enum CarType
+	{
+		coupe,
+		sedan,
+		crossover,
+		cabriolet,
+		pickup,
+	}
+}

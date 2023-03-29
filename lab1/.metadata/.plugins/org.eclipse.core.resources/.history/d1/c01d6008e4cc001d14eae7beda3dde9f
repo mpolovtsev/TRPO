@@ -1,0 +1,11 @@
+package lab1;
+
+import java.util.ArrayList;
+
+public class DetailShapeService {
+	public static String GetUniqueShape(ArrayList<Detail> details)
+	{
+		String result = "Деталей с уникальной формой не найдено.";
+		
+	}
+}
