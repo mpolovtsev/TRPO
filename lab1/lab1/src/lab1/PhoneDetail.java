@@ -26,13 +26,13 @@ public class PhoneDetail extends Detail
 		
 		return detailInfo;
 	}
-	
-	enum Model
-	{
-		apple,
-		samsung,
-		poco,
-		xiaomi,
-		lenovo
-	}
+}
+
+enum Model
+{
+	apple,
+	samsung,
+	poco,
+	xiaomi,
+	lenovo
 }

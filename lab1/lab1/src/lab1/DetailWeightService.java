@@ -2,8 +2,6 @@ package lab1;
 
 import java.util.ArrayList;
 
-import lab1.Detail.Shape;
-
 /** Класс DetailWeightService, содержащий методы для работы с весом деталей */
 public class DetailWeightService {
 	/** Метод getDetailsWeightOfSameShape, возвращающий общий вес деталей с одинаковой формой */

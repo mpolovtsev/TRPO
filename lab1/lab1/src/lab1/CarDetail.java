@@ -26,13 +26,13 @@ public class CarDetail extends Detail
 		
 		return detailInfo;
 	}
-	
-	enum Body
-	{
-		coupe,
-		sedan,
-		crossover,
-		cabriolet,
-		pickup,
-	}
+}
+
+enum Body
+{
+	coupe,
+	sedan,
+	crossover,
+	cabriolet,
+	pickup,
 }

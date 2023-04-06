@@ -4,4 +4,7 @@
     <fullyQualifiedTypeName name="lab1.CarDetail.Body"/>
     <fullyQualifiedTypeName name="lab1.Detail.Shape"/>
     <fullyQualifiedTypeName name="lab1.PhoneDetail.Model"/>
+    <fullyQualifiedTypeName name="javax.swing.JFrame"/>
+    <fullyQualifiedTypeName name="java.awt.event.ActionListener"/>
+    <fullyQualifiedTypeName name="java.util.ArrayDeque"/>
 </qualifiedTypeNameHistroy>

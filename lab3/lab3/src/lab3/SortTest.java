@@ -2,6 +2,7 @@ package lab3;
 
 import org.junit.Assert;
 import org.junit.jupiter.api.Test;
+import lab3.MinMaxElemService;
 
 public class SortTest {
 	double[] array = {-8.12, 4, 15, -70.3, 90, 40.1, 5.09, 4.01};
@@ -9,7 +10,7 @@ public class SortTest {
 	@Test
 	public void testFindMinElem() {
 		double expected = -70.3;
-		double result = Main.findMinElem(array);
+		double result = MinMaxElemService.findMinElem(array);
 		
 		Assert.assertEquals(result, expected, 0.001);
 	}
@@ -17,7 +18,7 @@ public class SortTest {
 	@Test
 	public void testFindMaxElem() {
 		double expected = 90;
-		double result = Main.findMaxElem(array);
+		double result = MinMaxElemService.findMaxElem(array);
 		
 		Assert.assertEquals(result, expected, 0.001);
 	}
@@ -25,7 +26,7 @@ public class SortTest {
 	@Test
 	public void testIntersionSort() {
 		double[] expected = {-70.3, -8.12, 4, 4.01, 5.09, 15, 40.1, 90};
-		double[] result = Main.insertionSort(array);
+		double[] result = Sort.insertionSort(array);
 		
 		for (int i = 0; i < array.length; i++)
 		{
@@ -36,7 +37,7 @@ public class SortTest {
 	@Test
 	public void testBucketSort() {
 		double[] expected = {-70.3, -8.12, 4, 4.01, 5.09, 15, 40.1, 90};
-		double[] result = Main.bucketSort(array, 5);
+		double[] result = Sort.bucketSort(array, 5);
 		
 		for (int i = 0; i < array.length; i++)
 		{

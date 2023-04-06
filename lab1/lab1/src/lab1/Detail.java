@@ -69,19 +69,19 @@ public abstract class Detail
 		
 		return detailInfo;
 	}
-	
-	enum Shape
-	{
-		circle,
-		square,
-		rectangle,
-		triangle
-	}
-	
-	enum Material
-	{
-		metallic,
-		plastic,
-		rubber
-	}
+}
+
+enum Shape
+{
+	circle,
+	square,
+	rectangle,
+	triangle
+}
+
+enum Material
+{
+	metallic,
+	plastic,
+	rubber
 }
